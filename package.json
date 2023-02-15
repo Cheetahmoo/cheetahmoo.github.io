@@ -1,0 +1,24 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "Install sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cheetahmoo/protfolio.git"
+  },
+  "author": "Josiah Carpenter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cheetahmoo/protfolio/issues"
+  },
+  "homepage": "https://github.com/Cheetahmoo/protfolio#readme",
+  "dependencies": {
+    "jquery": "^3.6.3",
+    "jsdom": "^21.1.0",
+    "node-sass": "^8.0.0"
+  }
+}

@@ -1,0 +1,103 @@
+:root {
+  --primary-color: #131b20;
+  --secondary-color: #0d4496;
+  --secondary-font: #cccccc;
+  --header-height: 40px; }
+
+@font-face {
+  font-family: poppin;
+  src: url(/assets/fonts/Poppins-Regular.ttf); }
+
+body {
+  background-color: var(--primary-color);
+  color: #cccccc;
+  font-family: poppin;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  text-align: center; }
+
+main {
+  min-height: calc(100vh - var(--header-height)); }
+
+footer {
+  color: white;
+  background-color: black;
+  min-height: 5rem;
+  overflow: hidden;
+  position: relative; }
+
+header {
+  height: var(--header-height);
+  display: grid;
+  grid-template-columns: 330px auto;
+  font-size: 1.3rem; }
+  header h1 {
+    font-size: 1em; }
+    header h1 span {
+      color: var(--secondary-color); }
+  header nav {
+    padding-top: 0.7em;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3%;
+    align-items: center;
+    justify-content: end; }
+  header a, header a:active, header a:visited, header a:link {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--secondary-font); }
+  header a:hover {
+    color: white; }
+
+.cntr-container {
+  margin-inline: auto; }
+
+.center-screen {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-self: center; }
+
+.welcom {
+  display: grid;
+  grid-template-columns: 22vw 40%;
+  column-gap: 10%;
+  justify-content: center; }
+
+.intro-body .intro-text {
+  text-align: left;
+  align-self: center; }
+  .intro-body .intro-text p {
+    color: var(--secondary-font); }
+
+.intro-body img.intro-img {
+  width: 75%; }
+
+@media screen and (min-width: 800px) {
+  .cntr-container {
+    max-width: 770px; } }
+
+@media screen and (min-width: 950px) {
+  .cntr-container {
+    max-width: 900px; } }
+
+@media screen and (min-width: 1400px) {
+  .cntr-container {
+    max-width: 1320px; } }
+
+.bobbing {
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-name: bobbing;
+  animation-duration: 4s; }
+
+@keyframes bobbing {
+  0% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(0, 15px); }
+  100% {
+    transform: translate(0, 0); } }
