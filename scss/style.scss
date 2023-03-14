@@ -15,6 +15,12 @@ $header-height: 40px;
     src: url(/assets/fonts/Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: poppin;
+    src: url(/assets/fonts/Poppins-bold.ttf);
+    font-weight: bold;
+}
+
 body {
     //background-image: url(/assets/images/background.png);
     background-color: var(--primary-color);
@@ -28,7 +34,20 @@ body {
     text-align: center;
 }
 main{
-    min-height: calc(100vh - var(--header-height));
+    min-height: 100vh;
+    margin-left: 20%;
+    padding: 1em;
+
+    section{
+        height: 97vh;
+        background-size: cover;
+        margin-bottom: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
 }
 
 footer{
@@ -39,24 +58,32 @@ footer{
     position: relative;
 }
 
-header{
-    height: var(--header-height);
-    display: grid;
-    grid-template-columns: 330px auto;
-    font-size: 1.3rem;
+nav.side-nav{
+    background-color: #0d1316;
+    color: #cccccc;
+    padding-top: 1em;
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
     h1{
         font-size: 1em;
         span{
             color:var(--secondary-color)
         }
     }
-    nav{
-        padding-top:0.7em;
-        display: grid;
-        grid-auto-flow: column;
-        gap: 3%;
+    .profile{
+        background-color: white;
+        width: 6rem;
+        height: 6rem;
+        display: inline-flex;
+        border-radius: 50%;
         align-items: center;
-        justify-content: end;
+        justify-content: center;
+        img{
+            width: 95%;
+        }
     }
 
     a, a:active, a:visited, a:link{
@@ -66,6 +93,12 @@ header{
     }
     a:hover{
         color:white;
+    }
+    .nav-body{
+        display: grid;
+        text-align: left;
+        row-gap: 1em;
+        margin-inline: 4em;
     }
 }
 
