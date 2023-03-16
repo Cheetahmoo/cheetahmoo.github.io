@@ -21,8 +21,12 @@ $header-height: 40px;
     font-weight: bold;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
-    //background-image: url(/assets/images/background.png);
+    //background-image: url(/assets/images/HmgQJDl.png);
     background-color: var(--primary-color);
     color: $secondary-font;
     font-family: poppin;
@@ -33,20 +37,78 @@ body {
     margin: 0;
     text-align: center;
 }
+
+@media only screen and (max-width: 990px) {
+    section>.body{
+        grid-template-columns: auto !important;
+        row-gap: 2em;
+    }
+    
+}
+
+@media only screen and (max-width: 1200px) {
+    main{
+        margin-left: 0 !important;
+    }
+    nav{
+        display: none;
+    }
+    
+}
+
+
 main{
     min-height: 100vh;
     margin-left: 20%;
-    padding: 1em;
 
-    section{
-        height: 97vh;
+    &>section{
+        text-align: left;
+        padding: 1em;
+        padding-inline: 5em;
+        min-height: 100vh;
         background-size: cover;
-        margin-bottom: 2em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-bottom: 2em;        
+    }
+    section>hr{
+        border-inline: none;
+        border-color: cornflowerblue;
+        margin-inline: 0;
+        width: 2em;
+    }
+    section>h1{
+        color:cornflowerblue
+    }
+    &>section:nth-child(even){
+        background-color: #FFFFFF05;
     }
 
+    section>.body{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        column-gap: 2%;
+    }
+
+
+}
+
+header{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.f-bg-img {
+    background-attachment: fixed;
+    background-size: cover;
+}
+.no-link-color{
+    &:hover,
+    &:link,
+    &:visited{
+        color:inherit
+    }
 
 }
 
@@ -86,6 +148,13 @@ nav.side-nav{
         }
     }
 
+    a{
+        display: flex;
+        align-items: center;
+        img{
+            padding-right: 0.5em;
+        }
+    }
     a, a:active, a:visited, a:link{
         text-decoration: none;
         cursor: pointer;

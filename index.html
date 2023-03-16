@@ -5,83 +5,225 @@
     <title>Josiah Carpenter</title>
     <link rel="stylesheet" href="/css/style.css">
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="app.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 
 
-    <body>
-        <nav class="side-nav">
-            <div id="profileBubble" class="profile">
-                <img src="/assets/images/profile_pic.png">
+<body>
+    <nav class="side-nav">
+        <div id="profileBubble" class="profile">
+            <img src="/assets/images/profile_pic.png">
+        </div>
+        <h1><span style="color:cornflowerblue">&#60/&#62</span> Josiah Carpenter</h1>
+        <div class="nav-body">
+            <a href="#resume"><img src="/assets/images/resume.svg" width="26">Resume</a>
+            <a href="#projects"><img src="/assets/images/project.svg" width="26">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#blog">Blog</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <header class="f-bg-img" style="background-image: url('/assets/images/2014 08 13_Elph_7419.jpg')">
+        <div class="intro-body welcom">
+            <div class="intro-text">
+                <h1>Hi, I'm Josiah</h1>
+                <p>A student at Cedarville University working on my bachelor's degree in Computer Science.</p>
             </div>
-            <h1><span style="color:cornflowerblue">&#60/&#62</span> Josiah Carpenter</h1>
-            <div class="nav-body">
-                <a href="/projects">Projects</a>
-                <a href="/services">Services</a>
-                <a href="/process">Process</a>
-                <a href="/about">About</a>
-                <a href="/contact">Contact</a>
-                <a href="/blog">Blog</a>
+        </div>
+        <img style="position: absolute;bottom: 0; margin-left: 20vw;" class="bobbing" src="/assets/images/down_arrow.svg" alt="arrow"
+            width="64">
+    </header>
+    <main>
+        <section id="resume">
+            <h1>Resume</h1>
+            <hr>
+            <div class="body">
+                <section>
+                    <h2>SUMMARY</h2>
+                    <p style="padding-left: 1em">
+                        <span style="font-weight: bold; font-size: 1.2em;">Josiah Carpenter</span>
+                        <br>
+                        Junior computer science major seeking to obtain a position where I can use my growing
+                        appreciation for design software and ingenuity of computers that are used in everyday life
+                        <br>
+                    <ul>
+                        <li>Emai: <a class="no-link-color"
+                                href="mailto:JosiahCarpenter@cedarivlle.edu">JosiahCarpenter@cedarivlle.edu</a></li>
+                        <li>Phone: (330)-9750-0352</li>
+                    </ul>
+                    </p>
+                </section>
+                <section id="education">
+                    <h2>EDUCATION</h2>
+                    <p style="padding-left: 1em">
+                        Bachelor of Science in Computer Science
+                        <br>
+                        Minor in Bible
+                        <br>
+                        Expected Graduation Date: May 2024
+                        <br>
+                        Cedarville University, Cedarville, OH
+                    </p>
+                </section>
+                <section id="profess-ex">
+                    <h2>PROFESSIONAL EXPERIENCE</h2>
+                    <div id="marathon-intern">
+                        <p style="padding-left: 1em">
+                            <b>Intern, Marathon Petroleum, Findlay, OH | Summer 2022</b>
+                        </p>
+                        <ul>
+                            <li>Worked closely with the IT team to develop and test software applications for use in the
+                                company's operations</li>
+                            <li>Assisted with troubleshooting and technical support for various software tools and systems
+                            </li>
+                            <li>Participated in meetings with project teams and presented progress updates on assigned tasks
+                            </li>
+                            <li>Contributed to the development of new software features and functionality to improve system
+                                performance and user experience</li>
+                        </ul>
+                    </div>
+                    <div id="youtub-affiliate">
+                        <p style="padding-left: 1em">
+                            <b>Website Developer,
+                                <a class="no-link-color" href="https://projectswithdave.com/" target="_blank">Projects With
+                                    Everyday Dave</a>
+                                , 6 Months+</b>
+                        </p>
+                        <ul>
+                            <li>Developed a website to showcase affiliate links for products promoted by a popular YouTuber
+                            </li>
+                            <li>Designed the website theme plugins for Wordpress using PHP, HTML, CSS, and JavaScript to
+                                provide a user-friendly interface for visitors</li>
+                            <li>Managed the website's hosting and provided ongoing maintenance and updates to ensure optimal
+                                performance</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="project-xp">
+                    <h2>PROJECT EXPERIENCE</h2>
+                    <div id="data-analusis">
+                        <p style="padding-left: 1em">
+                            <b>Devloped Data Analusis Software, Lawrence UPPER school, Sagamore Hills OH | Fall 2019</b>
+                        </p>
+                        <ul>
+                            <li>Worked closely with the IT team to develop and test software applications for use in the
+                                company's operations</li>
+                            <li>Collaborated with end-users to gather requirements and ensure software met their needs</li>
+                            <li>Utilized technologies such as Python, C#, and mySQL to develop and deploy software</li>
+                        </ul>
+                    </div>
+                    <div id="data-analusis">
+                        <p style="padding-left: 1em">
+                            <b>Game/Mod Development, Minetest, E-bit, Govcom</b>
+                        </p>
+                        <ul>
+                            <li>Developed E-bit, a 2D Topdown game with 3D models, and Govcom, a political strategy game, using Unity engine</li>
+                            <li>Collaborated with end-users to gather requirements and ensure software met their needs</li>
+                            <li>Utilized technologies such as Blender, Unity, C#, and mySQL to develop software</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="work-xp">
+                    <h2>WORK EXPERIENCE</h2>
+                    <div id="warehouseman">
+                        <p style="padding-left: 1em">
+                            <b>Warehouseman, Do It Best, Median | Summer 2021</b>
+                        </p>
+                        <ul>
+                            <li>Diligently retrieved items from their storage locations and prepared them for shipment
+                            </li>
+                            <li>Operated Tuggers and other machinery to move heavy items and pallets</li>
+                            <li>Maintained accurate inventory records and reported discrepancies to the appropriate
+                                personnel</li>
+                            <li>Contributed to the overall organization and cleanliness of the warehouse</li>
+                        </ul>
+                    </div>
+                    <div id="horses-barn">
+                        <p style="padding-left: 1em">
+                            <b>Equestrian Waste Management, Median Riding & Driving Academy, Median | Summer 2019</b>
+                        </p>
+                        <ul>
+                            <li>Responsible for managing waste from horses and maintaining a clean and safe environment
+                                for
+                                riders and horses</li>
+                            <li>Maintained and organized equipment used for waste management and ensured supplies such
+                                as
+                                food and water were replenished regularly</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <h2>SKILLS</h2>
+                    <p style="padding-left: 1em">
+                    <ul>
+                        <li>Programming languages: Java, C#, .NET, ASP.NET, C/C++, Python, Scheme, Rust</li>
+                        <li>Web development: HTML, CSS, JavaScript, ASP.NET</li>
+                        <li>Database management: SQL, SQLite</li>
+                        <li>Software development tools: Visual Studio, NetBeans, Git, Unity</li>
+                        <li>Operating systems: Microsoft Windows, Linux</li>
+                        <li>Familiar with various software development tools, including Git, JIRA, and Visual Studio
+                            Code</li>
+                        <li>Strong analytical and problem-solving skills</li>
+                        <li>Ability to work independently and collaboratively in a team environment</li>
+                        <li>Excellent verbal and written communication skills</li>
+                    </ul>
+                    </p>
+                </section>
             </div>
-        </nav>
-        <main>
-            <section id="welcome">
-                <div class="intro-body welcom">
-                    <div class="intro-text">
-                        <h1>Hi, I'm Josiah</h1>
-                        <p>A student at Cedarville University working on my bachelor's degree in Computer Science.</p>
-                    </div>
-                    <img class="intro-img" src="/assets/images/837427867561.png" alt="arrow">
-                </div>
-                <img style="position: absolute;bottom: 0;" class="bobbing" src="/assets/images/down_arrow.svg" alt="arrow" width="64">
-            </section>
-            <section id="E-bit" style="background-image: url('assets/images/E-bit snapShot 0.1.2.JPG')">
-                <div class="intro-body welcom">
-                    <div class="intro-text">
-                        <h1>Hi, I'm Josiah</h1>
-                        <p>A student at Cedarville University working on my bachelor's degree in Computer Science.</p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <div class="intro-body welcom">
-                    <div class="intro-text">
-                        <h1>Hi, I'm Josiah</h1>
-                        <p>A student at Cedarville University working on my bachelor's degree in Computer Science.</p>
-                    </div>
-                    <img class="intro-img" src="/assets/images/Screenshot_20230225_080641.png" alt="arrow">
-                </div>
-            </section>
-        </main>
+        </section>
 
+        <section id="projects">
+            <h2>Projects</h2>
+            <hr>
+        </section>
 
-        <?php
-        include("footer.php")
-        ?>
+        <section id="services">
+            <h2>Services</h2>
+            <hr>
+        </section>
 
-    </body>
+        <section id="blog">
+            <h2>Blog Posts</h2>
+            <hr>
+        </section>
 
-    </html>
+        <section id="about">
+            <h2>About Me</h2>
+            <hr>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <hr>
+
+        </section>
+    </main>
+</body>
+
+</html>
 </main>
 <footer>
-        <div class="cntr-container" style="padding:1% 2%">
-            <div class="ft-content">
+    <div class="cntr-container" style="padding:1% 2%">
+        <div class="ft-content">
+            <div class="col">
+                <h5>Heading for things that nobody reads</h5>
+                <p>
+                    WOW you are reading this... don't waste your time on it.
+                </p>
+            </div>
+            <div class="col">
+                <h5>Social Media</h5>
                 <div class="col">
-                    <h5>Heading for things that nobody reads</h5>
-                    <p>
-                        WOW you are reading this... don't waste your time on it.
-                    </p>
-                </div>
-                <div class="col">
-                    <h5>Social Media</h5>
-                    <div class="col">
-                        I don't have any LOL
-                    </div>
+                    I don't have any LOL
                 </div>
             </div>
-            <p style="font-weight: bold; font-size: 10px;">&#169; All Rights Reserved 2023</p>
         </div>
-    </footer>
+        <p style="font-weight: bold; font-size: 10px;">&#169; All Rights Reserved 2023</p>
+    </div>
+</footer>
 </body>
 
 </html>
