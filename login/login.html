@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WELCOME TO THE 5TH JERUSALEM!!</title>
+    <link rel="stylesheet" href="login_style.css">
+    <script src="./js/login_field.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="http://judah.cedarville.edu/~lcarpen/TermProject/P4/js/login.js" defer></script>-->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"
+        integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+</head>
+
+<body class="moon-font">
+    <header>
+        <h1>Access APE</h1>
+    </header>
+    <div id="main">
+        <form id="loginsubmit" method="post" action="http://judah.cedarville.edu/~lcarpen/TermProject/P4/login.php">
+            <ul class="login-cred">
+                <li>
+                    <label for="uname">
+                        <input type="text" name="uname">
+                        <span>Username</span>
+                    </label>
+                </li>
+                <li>
+                    <label for="pass">
+                        <input type="password" name="pass">
+                        <span>Password</span>
+                    </label>
+                    <img id="show" src="http://judah.cedarville.edu/~lcarpen/TermProject/P4/img/showpass.png"
+                        style="opacity: 1;">
+                    <img id="hide" src="http://judah.cedarville.edu/~lcarpen/TermProject/P4/img/hidepass.png"
+                        style="opacity: 1;" hidden="hidden">
+
+                </li>
+            </ul>
+            <section>
+                <button class="btn login-btn" type="submit" id="sub">Sign In</button>
+                <a class="btn register-btn" href="register.php">
+                    Register
+                </a>
+            </section>
+        </form>
+    </div>
+</body>
+
+</html>
