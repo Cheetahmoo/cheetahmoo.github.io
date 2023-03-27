@@ -125,7 +125,8 @@ nav.side-nav {
     align-items: center;
     justify-content: center; }
     nav.side-nav .profile img {
-      width: 95%; }
+      width: 95%;
+      border-radius: 50%; }
   nav.side-nav a {
     display: flex;
     align-items: center; }
