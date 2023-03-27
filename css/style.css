@@ -160,14 +160,16 @@ nav.side-nav {
   justify-content: center;
   align-items: center; }
 
-.intro-body .intro-text {
-  text-align: left;
-  align-self: center; }
-  .intro-body .intro-text p {
-    color: var(--secondary-font); }
-
-.intro-body img.intro-img {
-  width: 75%; }
+.intro-body {
+  margin: 1rem; }
+  .intro-body .intro-text {
+    text-align: left;
+    align-self: center; }
+    .intro-body .intro-text p {
+      max-width: 75%;
+      color: var(--secondary-font); }
+  .intro-body img.intro-img {
+    width: 75%; }
 
 .bobbing {
   animation-iteration-count: infinite;

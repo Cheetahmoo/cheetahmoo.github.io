@@ -228,11 +228,14 @@ nav.side-nav {
 }
 
 .intro-body {
+    margin: 1rem;
     .intro-text {
         text-align: left;
         align-self: center;
 
+
         p {
+            max-width: 75%;
             color: var(--secondary-font);
         }
     }
