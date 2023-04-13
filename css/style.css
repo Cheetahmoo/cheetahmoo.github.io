@@ -160,6 +160,16 @@ nav.side-nav {
   justify-content: center;
   align-items: center; }
 
+.download-svg {
+  color: cornflowerblue;
+  font-weight: normal;
+  margin-inline: 1rem;
+  text-decoration: none; }
+  .download-svg img {
+    user-select: none;
+    height: 1rem;
+    filter: invert(49%) sepia(65%) saturate(951%) hue-rotate(196deg) brightness(103%) contrast(86%); }
+
 .intro-body {
   margin: 1rem; }
   .intro-body .intro-text {
