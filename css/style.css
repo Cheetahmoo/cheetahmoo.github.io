@@ -19,6 +19,14 @@
 html {
   scroll-behavior: smooth; }
 
+@media only screen and (max-width: 1746px) {
+  body {
+    font-size: 0.75rem; } }
+
+a:link {
+  color: #65ed82;
+  font-weight: bold; }
+
 body {
   background-color: var(--primary-color);
   color: var(--secondary-font);
@@ -267,16 +275,14 @@ nav.side-nav {
   .fullscreen-panel > div {
     position: relative;
     padding: 5em;
-    width: 95%;
+    width: 95vw;
     background-color: var(--primary-color);
-    height: 90%;
+    height: 90vh;
     box-sizing: border-box; }
   .fullscreen-panel img {
     width: 100%; }
-
-@media screen and (min-width: 1920px) {
-  body {
-    font-size: 0.75vw; } }
+  .fullscreen-panel section {
+    overflow-y: auto; }
 
 @media only screen and (max-width: 990px) {
   .colms-2,
