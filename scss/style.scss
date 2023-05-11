@@ -314,6 +314,23 @@ nav.side-nav {
     &>div {
         justify-items: center;
     }
+
+    #disclaimer {
+        font-size: 0.75rem;
+        font-weight: bold;
+        color: #658297;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .contact-type{
+        text-align: center;
+
+        img{
+            width: "64px";
+            filter: invert(1);
+        }
+    }
 }
 
 //Cards

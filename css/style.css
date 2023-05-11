@@ -169,7 +169,7 @@ nav.side-nav {
   align-items: center; }
 
 .download-svg {
-  color: cornflowerblue;
+  color: cornflowerblue !important;
   font-weight: normal;
   margin-inline: 1rem;
   text-decoration: none; }
@@ -218,6 +218,17 @@ nav.side-nav {
   min-height: fit-content; }
   #contact > div {
     justify-items: center; }
+  #contact #disclaimer {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #658297;
+    text-align: center;
+    margin-top: 1rem; }
+  #contact .contact-type {
+    text-align: center; }
+    #contact .contact-type img {
+      width: "64px";
+      filter: invert(1); }
 
 .card {
   cursor: pointer;
